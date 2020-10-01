@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Inflação</title>
+  </head>
+  <body>
+    <script>
+      function calculaInflacao(
+        precoInicial,
+        precoFinal,
+        dataInicial,
+        dataFinal,
+        produto
+      ) {
+        var valor = precoFinal - precoInicial;
+        var data = dataFinal - dataInicial;
+        var inflacao = valor / data;
+
+        document.write(
+          'A inflação diaria do ' + produto + ' ' + 'é' + ' ' + inflacao
+        );
+      }
+
+      calculaInflacao(3.3, 4.7, 24, 30, 'tomate');
+    </script>
+  </body>
+</html>
