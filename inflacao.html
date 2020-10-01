@@ -19,7 +19,12 @@
         var inflacao = valor / data;
 
         document.write(
-          'A inflação diaria do ' + produto + ' ' + 'é' + ' ' + inflacao
+          'A inflação diaria do ' +
+            produto +
+            ' ' +
+            'é' +
+            ' ' +
+            Math.round(inflacao * 100) / 100
         );
       }
 
