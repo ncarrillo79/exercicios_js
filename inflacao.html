@@ -29,6 +29,24 @@
       }
 
       calculaInflacao(3.3, 4.7, 24, 30, 'tomate');
+
+      document.write('<br>');
+      document.write(
+        '**********************************************************************************'
+      );
+      document.write('<br>');
+      document.write(
+        '*********************************************************************************'
+      );
+      document.write('<br>');
+
+      function ganhoPorHora(salario, horasTrabalhadasNoMes) {
+        var salarioHora = salario / horasTrabalhadasNoMes;
+
+        document.write(Math.round(salarioHora));
+      }
+
+      ganhoPorHora(3000, 176);
     </script>
   </body>
 </html>
