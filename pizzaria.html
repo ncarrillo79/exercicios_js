@@ -18,7 +18,7 @@
       document.write('<br>');
 
       function calculaPizza(precoPizza, valorPizza, nomePizza) {
-        var ImpostoPizza = Math.trunc(valorPizza * (8.9 / 100));
+        var ImpostoPizza = Math.round(valorPizza * (8.9 / 100));
         var lucroLiquido = valorPizza - precoPizza - ImpostoPizza;
 
         return (
